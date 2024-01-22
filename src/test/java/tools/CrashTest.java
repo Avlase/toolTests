@@ -1,5 +1,7 @@
 package tools;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class CrashTest {
@@ -23,4 +25,11 @@ public class CrashTest {
     public void fiveMetersTest() {
         System.out.println("CrashTest::fiveMetersTest @" + Thread.currentThread().getName());}
 
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("CrashTest::beforeTest @" + Thread.currentThread().getName());}
+
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("CrashTest::afterMethod @" + Thread.currentThread().getName());}
 }

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+<suite name="Suite1" parallel="classes">
+    <test name="test1" thread-count="2">
+        <classes>
+            <class name="tools.BatteryLifeTest"/>
+            <class name="tools.CrashTest"/>
+        </classes>
+    </test>
+    <test name="test2" thread-count="2">
+        <classes>
+            <class name="tools.WaterproofTest"/>
+        </classes>
+    </test>
+</suite>

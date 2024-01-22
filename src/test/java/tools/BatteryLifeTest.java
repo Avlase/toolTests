@@ -1,4 +1,6 @@
 package tools;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.sql.SQLOutput;
@@ -25,4 +27,13 @@ public class BatteryLifeTest {
     @Test
     public void voltageTest() {
         System.out.println("BatteryLifeTest::voltageTest @" + Thread.currentThread().getName());}
+
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("BatteryLifeTest::beforeTest @" + Thread.currentThread().getName());}
+
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("BatteryLifeTest::afterMethod @" + Thread.currentThread().getName());}
+
 }

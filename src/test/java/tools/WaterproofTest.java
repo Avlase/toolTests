@@ -1,5 +1,7 @@
 package tools;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class WaterproofTest {
@@ -23,4 +25,12 @@ public class WaterproofTest {
     @Test
     public void drippingTest() {
         System.out.println("WaterproofTest::drippingTest( @" + Thread.currentThread().getName());}
+
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println("WaterproofTest::beforeTest @" + Thread.currentThread().getName());}
+
+    @AfterMethod
+    public void afterMethod() {
+        System.out.println("WaterproofTest::afterMethod @" + Thread.currentThread().getName());}
 }
