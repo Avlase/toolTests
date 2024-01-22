@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53fc2f54-a24f-41dd-a69b-1615063bb3b2" name="Changes" comment="Test added">
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testngGroups.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tools/BatteryLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/BatteryLifeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tools/CrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/CrashTest.java" afterDir="false" />
@@ -39,10 +39,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/toolTests"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.WaterproofTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\toolTests" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="BatteryLifeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <extension name="coverage">
@@ -54,6 +60,16 @@
       <option name="PACKAGE_NAME" value="tools" />
       <option name="MAIN_CLASS_NAME" value="tools.BatteryLifeTest" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/user/IdeaProjects/toolTests/testngGroups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="toolTests" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGroups.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -79,6 +95,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/toolTests/testngGroups.xml" />
         <item itemvalue="TestNG.WaterproofTest" />
         <item itemvalue="TestNG.BatteryLifeTest" />
       </list>
@@ -109,7 +126,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705934530995</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test added">
+      <option name="closed" value="true" />
+      <created>1705936638924</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705936638924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test added">
+      <option name="closed" value="true" />
+      <created>1705939107682</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705939107682</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test added">
+      <option name="closed" value="true" />
+      <created>1705940264954</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705940264954</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

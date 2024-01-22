@@ -5,23 +5,23 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class CrashTest {
-    @Test
+    @Test(groups = {"group-one"})
     public void hammerTest() {
         System.out.println("CrashTest::hammerTest @" + Thread.currentThread().getName());}
 
-    @Test
+    @Test(groups = {"group-two"})
     public void tenMetersTest() {
         System.out.println("CrashTest::tenMetersTest @" + Thread.currentThread().getName());}
 
-    @Test
+    @Test(groups = {"group-two"})
     public void twentyMetersTest() {
         System.out.println("CrashTest::twentyMetersTest @" + Thread.currentThread().getName());}
 
-    @Test
+    @Test(groups = {"group-one"})
     public void poolOneMeterTest() {
         System.out.println("CrashTest::oneMeterTest @" + Thread.currentThread().getName());}
 
-    @Test
+    @Test(groups = {"group-three"})
     public void fiveMetersTest() {
         System.out.println("CrashTest::fiveMetersTest @" + Thread.currentThread().getName());}
 

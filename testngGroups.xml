@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+<suite name="Suite2">
+    <test name="test3">
+        <classes>
+            <class name="tools.WaterproofTest"/>
+            <class name="tools.BatteryLifeTest"/>
+            <class name="tools.CrashTest"/>
+        </classes>
+        <groups>
+            <run>
+                <include name="group-one"/>
+                <exclude name="group-two"/>
+            </run>
+        </groups>
+    </test>
+   </suite>
+
+
