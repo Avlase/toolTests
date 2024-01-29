@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53fc2f54-a24f-41dd-a69b-1615063bb3b2" name="Changes" comment="Test added">
-      <change afterPath="$PROJECT_DIR$/testngGroups.xml" afterDir="false" />
+    <list default="true" id="53fc2f54-a24f-41dd-a69b-1615063bb3b2" name="Changes" comment="Groups added (include/exclude)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tools/FakeRestApiUserTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tools/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tools/dto/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tools/BatteryLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/BatteryLifeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tools/CrashTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/CrashTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tools/WaterproofTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/WaterproofTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Avlase"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="18799c15-25f0-4f02-937f-2f72ea82e6d7" />
+        <option name="url" value="https://github.com/Avlase/toolTests.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
@@ -40,7 +54,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/user/IdeaProjects/toolTests"
+    "last_opened_file_path": "C:/Users/user/IdeaProjects/toolTests",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -48,24 +65,7 @@
       <recent name="C:\Users\user\IdeaProjects\toolTests" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="BatteryLifeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="toolTests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tools.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tools" />
-      <option name="MAIN_CLASS_NAME" value="tools.BatteryLifeTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.FakeRestApiUserTests.jsonObjectTest">
     <configuration name="C:/Users/user/IdeaProjects/toolTests/testngGroups.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testngGroups.xml" />
@@ -76,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WaterproofTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FakeRestApiUserTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +85,62 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tools" />
-      <option name="MAIN_CLASS_NAME" value="tools.WaterproofTest" />
+      <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeRestApiUserTests.getUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="toolTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tools" />
+      <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeRestApiUserTests.getUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="toolTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tools" />
+      <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
+      <option name="METHOD_NAME" value="getUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeRestApiUserTests.jsonObjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="toolTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tools" />
+      <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
+      <option name="METHOD_NAME" value="jsonObjectTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -95,9 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.FakeRestApiUserTests.jsonObjectTest" />
+        <item itemvalue="TestNG.FakeRestApiUserTests" />
+        <item itemvalue="TestNG.FakeRestApiUserTests.getUser" />
+        <item itemvalue="TestNG.FakeRestApiUserTests.getUsers" />
         <item itemvalue="TestNG.C:/Users/user/IdeaProjects/toolTests/testngGroups.xml" />
-        <item itemvalue="TestNG.WaterproofTest" />
-        <item itemvalue="TestNG.BatteryLifeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -150,11 +206,39 @@
       <option name="project" value="LOCAL" />
       <updated>1705940264954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Groups added (include/exclude)">
+      <option name="closed" value="true" />
+      <created>1705943331313</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705943331313</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Groups added (include/exclude)">
+      <option name="closed" value="true" />
+      <created>1705943372934</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705943372934</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test added" />
+    <MESSAGE value="Groups added (include/exclude)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Groups added (include/exclude)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tools/dto/Users.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
