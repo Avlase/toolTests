@@ -9,6 +9,7 @@
     <test name="test2" thread-count="2">
         <classes>
             <class name="tools.WaterproofTest"/>
+            <class name="tools.FakeRestApiUserTests"/>
         </classes>
     </test>
    </suite>
