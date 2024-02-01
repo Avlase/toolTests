@@ -1,18 +1,19 @@
 package tools;
-
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import okhttp3.*;
-import okhttp3.internal.tls.OkHostnameVerifier;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import tools.dto.User;
 import tools.dto.Users;
-
 import java.io.IOException;
+import static tools.JsonReader.readJsonFromUrl;
 
-import static com.sun.management.HotSpotDiagnosticMXBean.ThreadDumpFormat.JSON;
 
 public class FakeRestApiUserTests {
     final String apiUrl = "https://fakerestapi.azurewebsites.net/api/v1";
@@ -56,7 +57,7 @@ public class FakeRestApiUserTests {
         try (Response response = client.newCall(request).execute()) {
             int code = response.code();
             Assert.assertEquals(code, 200, "Should be 200, but got " + code);
-            var user = mapper.readValue(response.body().string(), User.class);
+            var user = mapper.readValue(response.body().string(), Users.class);
             Assert.assertEquals(user.getId(), 5, "Should be 5, but got" + user.getId());
             Assert.assertEquals(user.getUserName(), "User 5");
             Assert.assertEquals(user.getPassword(), "Password5", "Should be Password5, but got" + user.getPassword());
@@ -84,5 +85,13 @@ public class FakeRestApiUserTests {
             throw new RuntimeException(e);
 
         }
+    }
+    @Test
+    public void getUserJSONObject() throws IOException, JSONException {
+        final String endpointName = "/users/5";
+        String url = apiUrl + endpointName;
+        JSONObject json = readJsonFromUrl(url);
+        Assert.assertEquals(json.get("userName"), "User 5");
+        Assert.assertEquals(json.get("password"), "Password5");
     }
 }

@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53fc2f54-a24f-41dd-a69b-1615063bb3b2" name="Changes" comment="lesson 19, HW13">
-      <change afterPath="$PROJECT_DIR$/testingFakeApi.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="53fc2f54-a24f-41dd-a69b-1615063bb3b2" name="Changes" comment="lesson 19, HW13 added testingFakeApi.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tools/JsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tools/FakeRestApiUserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tools/FakeRestApiUserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tools/dto/User.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,14 +24,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Avlase"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Avlase&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -37,9 +45,9 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2bJSyHcidwovRsJ5YbppY8Ftt7p" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,11 +58,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "hw13AddJSONObjectTest",
     "last_opened_file_path": "C:/Users/user/IdeaProjects/toolTests",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -62,17 +72,7 @@
       <recent name="C:\Users\user\IdeaProjects\toolTests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/user/IdeaProjects/toolTests/testingFakeApi.xml">
-    <configuration name="C:/Users/user/IdeaProjects/toolTests/testingFakeApi.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="toolTests" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testingFakeApi.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.FakeRestApiUserTests">
     <configuration name="FakeRestApiUserTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <extension name="coverage">
@@ -108,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FakeRestApiUserTests.getUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FakeRestApiUserTests.getUser2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tools" />
       <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
-      <option name="METHOD_NAME" value="getUsers" />
+      <option name="METHOD_NAME" value="getUser2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -126,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FakeRestApiUserTests.jsonObjectTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="FakeRestApiUserTests.getUserJSONObject" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="toolTests" />
       <extension name="coverage">
         <pattern>
@@ -136,7 +136,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="tools" />
       <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
-      <option name="METHOD_NAME" value="jsonObjectTest" />
+      <option name="METHOD_NAME" value="getUserJSONObject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FakeRestApiUserTests.getUsers2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="toolTests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tools" />
+      <option name="MAIN_CLASS_NAME" value="tools.FakeRestApiUserTests" />
+      <option name="METHOD_NAME" value="getUsers2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -146,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/user/IdeaProjects/toolTests/testingFakeApi.xml" />
-        <item itemvalue="TestNG.FakeRestApiUserTests.jsonObjectTest" />
         <item itemvalue="TestNG.FakeRestApiUserTests" />
+        <item itemvalue="TestNG.FakeRestApiUserTests.getUserJSONObject" />
         <item itemvalue="TestNG.FakeRestApiUserTests.getUser" />
-        <item itemvalue="TestNG.FakeRestApiUserTests.getUsers" />
+        <item itemvalue="TestNG.FakeRestApiUserTests.getUser2" />
+        <item itemvalue="TestNG.FakeRestApiUserTests.getUsers2" />
       </list>
     </recent_temporary>
   </component>
@@ -227,14 +245,31 @@
       <option name="project" value="LOCAL" />
       <updated>1706529482877</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson 19, HW13 added testingFakeApi.xml">
+      <option name="closed" value="true" />
+      <created>1706539949435</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706539949435</updated>
+    </task>
+    <task id="LOCAL-00010" summary="lesson 19, HW13 added testingFakeApi.xml">
+      <option name="closed" value="true" />
+      <created>1706539979810</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706539979810</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test added" />
     <MESSAGE value="Groups added (include/exclude)" />
     <MESSAGE value="lesson 19, HW13" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 19, HW13" />
+    <MESSAGE value="lesson 19, HW13 added testingFakeApi.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 19, HW13 added testingFakeApi.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
